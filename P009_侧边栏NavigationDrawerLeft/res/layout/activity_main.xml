@@ -1,0 +1,27 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <android.support.v4.widget.DrawerLayout
+        android:id="@+id/drawer_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/white" >
+
+        <include layout="@layout/title" />
+        <!-- 左边滑出视图  end\start 区分左右视图 -->
+
+        <LinearLayout
+            android:id="@+id/left_drawer"
+            android:layout_width="140dip"
+            android:layout_height="fill_parent"
+            android:layout_gravity="start" >
+
+            <!-- 右侧菜单导航 -->
+
+            <include layout="@layout/slidingmenu_leftbar" />
+        </LinearLayout>
+    </android.support.v4.widget.DrawerLayout>
+
+</RelativeLayout>
